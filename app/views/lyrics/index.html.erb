@@ -1,0 +1,10 @@
+<div class="col-sm-4 col-md-offset-4">
+	<%@lyrics.each do |lyric|%>
+		
+			<%= link_to lyric.song, lyric, class: "btn btn-default text-center"%>
+		</br>
+	<%end%>
+</div></br>
+
+<%= link_to "New Lyric Sheet", new_lyric_path %></br>
+<%= link_to "Logout", destroy_user_session_path, method: :delete%>

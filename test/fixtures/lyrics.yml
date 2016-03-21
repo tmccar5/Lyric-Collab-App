@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  song: MyString
+  verse1: MyText
+  chorus: MyText
+  verse2: MyText
+  bridge: MyText
+
+two:
+  song: MyString
+  verse1: MyText
+  chorus: MyText
+  verse2: MyText
+  bridge: MyText

@@ -1,0 +1,52 @@
+<div class="row">
+	<div class="btn-group-vertical col-sm-1">
+	    <a href="<%=edit_lyric_path%>" class="btn btn-default">Edit</a>
+	    <a href="<%=lyrics_path%>" class="btn btn-default">Back</a>
+	  	<%= link_to 'Delete', lyric_path, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default"%>
+	</div>
+	<div class="col-sm-4 col-md-offset-3">
+		<h5>Song</h5>
+		<div class="well text-center"><%=@lyric.song%></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-4 col-md-offset-4">
+		<h5>Verse 1</h5>
+		<div class="well text-center"><%=@lyric.verse1%></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-4 col-md-offset-4">
+		<h5>Chorus</h5>
+		<div class="well text-center"><%=@lyric.chorus%></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-4 col-md-offset-4">
+		<h5>Verse 2</h5>
+		<div class="well text-center"><%=@lyric.verse2%></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-4 col-md-offset-4">
+		<h5>Bridge</h5>
+		<div class="well text-center"><%=@lyric.bridge%></div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-4 col-md-offset-4">
+		<h5>Bridge</h5>
+		<div class="well text-center">
+			<%if @lyric.public = true%>
+				<h1> This is a public Lyric! </h1>
+			<%else%>
+				<h1> This Lyric is Private</h1>
+			<%end%>
+		</div>
+	</div>
+</div>
+
