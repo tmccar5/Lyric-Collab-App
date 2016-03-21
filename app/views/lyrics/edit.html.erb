@@ -44,14 +44,16 @@
 		</div>
 	</div>
 
-	<div class="form-group">
-    <div class="col-md-4 col-md-offset-4">
-			<%= label_tag(:public, "Make this Lyric Public", class: "control-label") %>
+	<%if current_user.id == @lyric.user_id%>
+		<div class="form-group">
+	    <div class="col-md-4 col-md-offset-4">
+				<%= label_tag(:public, "Keep this Lyric Public", class: "control-label") %>
+			</div>
+			<div class="col-md-4 col-md-offset-4">
+				<%= check_box :public, checked = true, class: "form-control"%>
+			</div>
 		</div>
-		<div class="col-md-4 col-md-offset-4">
-			<%= check_box_tag :public, class: "form-control"%>
-		</div>
-	</div>
+	<%end%>
 
 	<div class="form-group">
 		<div class="col-md-4 col-md-offset-4">
