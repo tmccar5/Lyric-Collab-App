@@ -1,28 +1,10 @@
-== README
+== SONGY
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an app for creating lyrics and collabing with other users.
 
-Things you may want to cover:
+Users can keep their lyrics private or mark them as public.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Any user can edit public lyrics but only the creator can take the lyric off the public page.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Let me know if you have any questions or ways to improve my code thank you!!
