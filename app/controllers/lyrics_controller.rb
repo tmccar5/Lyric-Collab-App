@@ -5,6 +5,10 @@ class LyricsController < ApplicationController
 		@lyrics = Lyric.all
 	end
 
+	def landing
+		@lyrics = Lyric.all
+	end
+
 	def public
 		@lyrics = Lyric.all
 	end

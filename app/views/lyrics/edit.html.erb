@@ -47,7 +47,7 @@
 	<%if current_user.id == @lyric.user_id%>
 		<div class="form-group">
 	    	<div class="col-md-4 col-md-offset-4">
-				<%= label_tag(:public, "Keep this Lyric Public", class: "control-label") %>
+				<%= label_tag(:public, "Make this Lyric Public", class: "control-label") %>
 			</div>
 			<div class="col-md-4 col-md-offset-4">
 				<%= f.check_box :public, class: "form-control"%>
